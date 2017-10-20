@@ -15,6 +15,12 @@ npm adduser
 npm publish
 ```
 > ok,开发的npm package已经上传到了npm仓库，直接npm install ...就可以喽.
+---
+> 4)如果要更新已经上传了的包，还是执行
+```
+npm publish
+```
+这句话，但是必须更改一下package.json里的version的版本号.
 
 ## 接下来,就是如何写一个全局安装带有命令行工具的package了
 其实，非常简单，首先，在package.json文件中加上"bin"属性，如下图
@@ -26,7 +32,8 @@ jinuxtestcmd
 ```
 #!/usr/bin/env node
 ```
-这一句,就是这么简单,完成。
+这一句,就是这么简单,完成.见下图
+![](https://raw.githubusercontent.com/jinux7/jinux-cmd-test/master/img/2.png)
 ---
 ### 本案例已经上传至npm上,使用方法
 ```
@@ -36,5 +43,5 @@ npm install -g jinux-cmd-test
 ```
 jinuxtestcmd hello
 ```
-就可以看到效果了。
+就可以看到效果了.
 
