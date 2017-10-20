@@ -33,6 +33,7 @@ jinuxtestcmd
 #!/usr/bin/env node
 ```
 这一句,就是这么简单,完成.见下图
+
 ![](https://raw.githubusercontent.com/jinux7/jinux-cmd-test/master/img/2.png)
 ---
 ### 本案例已经上传至npm上,使用方法
